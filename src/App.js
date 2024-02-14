@@ -20,6 +20,15 @@ function App() {
       </header>
     </div>
   );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      monsters: [],
+      searchField: ''
+    }
+    console.log("constructor")
+  }
 }
 
 export default App;
