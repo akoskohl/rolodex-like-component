@@ -22,6 +22,14 @@ class App extends Component {
       document.addEventListener("keydown", this.handleKeyPress);
   }
 
+  render() {
+    console.log("render") 
+
+    const { monsters, searchField } = this.state
+    const { onSearchChange } = this
+
+    const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField))
+
 }
 
 export default App;
