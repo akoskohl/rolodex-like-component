@@ -12,6 +12,16 @@ class App extends Component {
     }
     console.log("constructor")
   }
+
+  componentDidMount () {
+  fetch('https://raw.githubusercontent.com/akoskohl/scripts/main/random_users_with_email')
+      .then(response => response.json())
+      .then(users => this.setState({ monsters: users }))
+      .then(console.log("componentDidMount"));
+      
+      document.addEventListener("keydown", this.handleKeyPress);
+  }
+
 }
 
 export default App;
