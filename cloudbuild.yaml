@@ -1,9 +1,3 @@
-default: &default
-  PROJECT_ID: d01-playground
-  IMAGE: monster-rolodex
-  SERVICE_NAME: monster-rolodex
-  REGION: europe-west3
-
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
