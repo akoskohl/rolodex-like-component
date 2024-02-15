@@ -22,6 +22,25 @@ class App extends Component {
       document.addEventListener("keydown", this.handleKeyPress);
   }
 
+  onSearchChange = (event)=>{
+    const searchField = event.target.value.toLocaleLowerCase()
+    this.setState(()=>{return { searchField }})
+    console.log("onSearchChange")
+  }
+
+  handleKeyPress = (event) => {
+    if (event.key === "f" && event.metaKey) {
+      console.log("Command + f pressed")
+      
+      event.preventDefault(); // Prevent Chrome from popping up its search box
+      
+      const inputField = document.querySelector(".monsters-search-box");
+      if (inputField) {
+        inputField.focus();
+      }
+    }
+  }
+
   render() {
     console.log("render") 
 
