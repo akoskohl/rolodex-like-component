@@ -4,7 +4,7 @@ steps:
   args: ['build', '-t', 'gcr.io/d01-playground/monster-rolodex', '.', '-f', 'Dockerfile']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/d01-playground/monster-rolodex']
+  args: ['push', 'gcr.io/d01-playground/monsters-rolodex/monster-rolodex']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
