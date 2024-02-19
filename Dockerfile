@@ -32,4 +32,4 @@ COPY --from=0 /app/build ./build
 EXPOSE 5000
 
 # Run the application
-CMD ["serve", "-s", "build", "-l", "5000"]
+CMD ["serve", "-s", "build", "-l", "8080"]

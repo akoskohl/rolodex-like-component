@@ -8,7 +8,7 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'monster-rolodex', '--image', 'eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex', '--region', 'europe-west3']
+  args: ['run', 'deploy', 'monster-rolodex', '--image', 'eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex', '--region', 'europe-west3', '--allow-unauthenticated']
 images:
 - gcr.io/d01-playground/monsters-rolodex/monster-rolodex
 
