@@ -1,14 +1,31 @@
 steps:
-# Build the container image
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex', '.', '-f', 'Dockerfile']
-# Push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex']
-# Deploy container image to Cloud Run
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: gcloud
-  args: ['run', 'deploy', 'monster-rolodex', '--image', 'eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex', '--region', 'europe-west3', '--allow-unauthenticated']
+  # Build the container image
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex",
+        ".",
+        "-f",
+        "Dockerfile",
+      ]
+  # Push the container image to Container Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex"]
+  # Deploy container image to Cloud Run
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      [
+        "run",
+        "deploy",
+        "monster-rolodex",
+        "--image",
+        "eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex",
+        "--region",
+        "europe-west3",
+        "--allow-unauthenticated",
+      ]
 images:
-- gcr.io/d01-playground/monsters-rolodex/monster-rolodex
-
+  - gcr.io/d01-playground/monsters-rolodex/monster-rolodex
