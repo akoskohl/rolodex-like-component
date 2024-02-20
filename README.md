@@ -4,7 +4,7 @@ There are several image placeholder services available that allow you to dynamic
 
 ### Lorem Picsum
 
-Lorem Picsum is a service that allows you to dynamically generate placeholder images using specific URLs with parameters such as width, height, and random seed. You can use it by appending the desired parameters to the base URL. For example, to get a random image with a width of 200 and height of 300 pixels, you can use the following URL: [https://robohash.org/3?set=set2](https://robohash.org/3?set=set2).
+Lorem Picsum is a service that allows you to dynamically generate placeholder images using specific URLs with parameters such as width, height, and random seed. You can use it by appending the desired parameters to the base URL. For example, to get a random image with a width of 200 and height of 300 pixels, you can use the following URL: [https://picsum.photos/200/300](https://picsum.photos/200/300).
 
 ### Unsplash Source
 
