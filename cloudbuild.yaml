@@ -28,4 +28,4 @@ steps:
         "--allow-unauthenticated",
       ]
 images:
-  - gcr.io/d01-playground/monsters-rolodex/monster-rolodex
+  - eu.gcr.io/d01-playground/monsters-rolodex/monster-rolodex
