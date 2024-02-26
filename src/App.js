@@ -27,8 +27,16 @@ const App = () => {
     setSearchField(searchFieldString);
   };
 
+  return (
+    <div className="App">
+      <h1 className="app-title">Monters Rolodex</h1>
+      <SearchBox
         className="monsters-search-box"
+        onSearchChange={onSearchChange}
         placeholder="search monsters (cmd+f)"
+      />
+      <CardList monsters={filteredMonsters} />
+    </div>
   );
 };
 
