@@ -15,6 +15,11 @@ const App = () => {
       .then((users) => setMonsters(users));
   }, []);
 
+  const onSearchChange = (event) => {
+    const searchFieldString = event.target.value.toLocaleLowerCase();
+    setSearchField(searchFieldString);
+  };
+
         className="monsters-search-box"
         placeholder="search monsters (cmd+f)"
   );
