@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+## Getting Started with Image Placeholder Services
+
+There are several image placeholder services available that allow you to dynamically generate placeholder images for your projects. Here are a few popular ones:
+
+### Lorem Picsum
+
+Lorem Picsum is a service that allows you to dynamically generate placeholder images using specific URLs with parameters such as width, height, and random seed. You can use it by appending the desired parameters to the base URL. For example, to get a random image with a width of 200 and height of 300 pixels, you can use the following URL: [https://picsum.photos/200/300](https://picsum.photos/200/300).
+
+### Unsplash Source
+
+Unsplash offers an API that allows you to dynamically retrieve high-quality images. While it doesn't generate images based on parameters like the previous services, you can fetch random images or search for specific ones using their API. You can use it by making HTTP requests to their API endpoints. For example, to get a random image, you can use the following URL: [https://source.unsplash.com/random](https://source.unsplash.com/random).
+
+### Robohash
+
+RoboHash is a service that enables users to create unique robot images based on a provided input.
+The link is directed to a specific robot image identified by the ID "3" and belonging to the "set2" set of images.
+Example: [https://robohash.org/3?set=set2](https://robohash.org/3?set=set2)
+
+
+## Deploy to GCP Cloud Run
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,42 +50,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
