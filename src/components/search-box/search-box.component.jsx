@@ -1,7 +1,8 @@
 import "./search-box.styles.css";
 
-const SearchBox = ({ className, placeholder, onSearchChange }) => (
+const SearchBox = ({ id, className, placeholder, onSearchChange }) => (
   <input
+    id={id}
     className={`search-box ${className}`}
     type="search"
     placeholder={placeholder}
