@@ -30,10 +30,26 @@ const App = () => {
     setSearchField(searchFieldString);
   };
 
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "f" && event.metaKey) {
+        event.preventDefault();
+        document.getElementById("search-field").focus();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
+
   return (
     <div className="App">
       <h1 className="app-title">Monters Rolodex</h1>
       <SearchBox
+        id="search-field"
         className="monsters-search-box"
         onSearchChange={onSearchChange}
         placeholder="search monsters (cmd+f)"
