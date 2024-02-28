@@ -8,6 +8,8 @@ const App = () => {
   const [searchField, setSearchField] = useState("");
   const [monsters, setMonsters] = useState([]);
   const [filteredMonsters, setFilteredMonsters] = useState([]);
+  console.log(searchField);
+
   useEffect(() => {
     fetch(
       "https://raw.githubusercontent.com/akoskohl/scripts/main/random_users_with_email"
